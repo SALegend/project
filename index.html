@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamic Multiple-Choice Questions</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Dynamic Multiple-Choice Questions</h1>
+    <div id="questions">
+      <div class="question">
+        <label for="question1Input">Question 1:</label>
+        <input type="text" id="question1Input" name="question1">
+        <div class="choices">
+          <label for="choice1Input">Choice 1:</label>
+          <input type="text" id="choice1Input" name="choice1">
+          <label for="choice2Input">Choice 2:</label>
+          <input type="text" id="choice2Input" name="choice2">
+          <button type="button" class="add-choice" onclick="addChoice(this)">Add Choice</button>
+          <button type="button" class="remove-choice" onclick="removeChoice(this)">Remove Choice</button>
+        </div>
+      </div>
+    </div>
+    <button type="button" id="addQuestionButton" onclick="addQuestion()">Add Question</button>
+    <button type="button" id="removeQuestionButton" onclick="removeQuestion()">Remove Question</button>
+    <br>
+    <input type="submit" value="Submit">
+
+    <script src="script.js"></script>
+  </body>
+</html>
